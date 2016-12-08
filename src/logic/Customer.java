@@ -45,43 +45,43 @@ public class Customer {
 		if(this.getFood == this.wantedFood){
 			if(this.currentFace == happyFace){
 				if(this.getFood instanceof Pork){
-					if(this.getFood.face1IsOnStage3()&&this.getFood.face2IsOnStage3()){
+					if(this.getFood.getcurrentFace1Stage()==3&&this.getFood.getcurrentFace2Stage()==3){
 						return 10;
 					}else return -10;
 				}else if (this.getFood instanceof Fish){
-					if(this.getFood.face1IsOnStage1()&&this.getFood.face2IsOnStage1()){
+					if(this.getFood.getcurrentFace1Stage()==1&&this.getFood.getcurrentFace2Stage()==1){
 						return 10;
 					}else return -10;
 				}else{
-					if(this.getFood.face1IsOnStage2()&&this.getFood.face2IsOnStage2()){
+					if(this.getFood.getcurrentFace1Stage()==2&&this.getFood.getcurrentFace2Stage()==2){
 						return 10;
 					}else return -10;
 				}
 			}else if(this.currentFace == normalFace){
 				if(this.getFood instanceof Pork){
-					if(this.getFood.face1IsOnStage3()&&this.getFood.face2IsOnStage3()){
+					if(this.getFood.getcurrentFace1Stage()==3&&this.getFood.getcurrentFace2Stage()==3){
 						return 5;
 					}else return -15;
 				}else if (this.getFood instanceof Fish){
-					if(this.getFood.face1IsOnStage1()&&this.getFood.face2IsOnStage1()){
+					if(this.getFood.getcurrentFace1Stage()==1&&this.getFood.getcurrentFace2Stage()==1){
 						return 5;
 					}else return -15;
 				}else{
-					if(this.getFood.face1IsOnStage2()&&this.getFood.face2IsOnStage2()){
+					if(this.getFood.getcurrentFace1Stage()==2&&this.getFood.getcurrentFace2Stage()==2){
 						return 5;
 					}else return -15;
 				}
 			}else{
 				if(this.getFood instanceof Pork){
-					if(this.getFood.face1IsOnStage3()&&this.getFood.face2IsOnStage3()){
+					if(this.getFood.getcurrentFace1Stage()==3&&this.getFood.getcurrentFace2Stage()==3){
 						return -5;
 					}else return -25;
 				}else if (this.getFood instanceof Fish){
-					if(this.getFood.face1IsOnStage1()&&this.getFood.face2IsOnStage1()){
+					if(this.getFood.getcurrentFace1Stage()==1&&this.getFood.getcurrentFace2Stage()==1){
 						return -5;
 					}else return -25;
 				}else{
-					if(this.getFood.face1IsOnStage2()&&this.getFood.face2IsOnStage2()){
+					if(this.getFood.getcurrentFace1Stage()==2&&this.getFood.getcurrentFace2Stage()==2){
 						return -5;
 					}else return -25;
 				}

@@ -4,10 +4,12 @@ public class Pork extends GrillableFood{
 	
 	
 	
-	public Pork(int timeOfStage0,int timeOfStage1,int timeOfStage2,int timeOfStage3){
-		super(timeOfStage0,timeOfStage1);
-		this.timeOfStage2 = timeOfStage2;
-		this.timeOfStage3 = timeOfStage3;
+	public Pork(){
+		super();
+		this.timeOfStage1 = 300;
+		this.timeOfStage2 = 600;
+		this.timeOfStage3 = 900;
+		this.timeOfStage4 = 1200;
 	}
 	
 	
